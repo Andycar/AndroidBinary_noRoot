@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.andycar.binarytest">
+
+    <application
+    android:allowBackup="true"
+    android:theme="@android:style/Theme.DeviceDefault"
+    android:label="My binary test"
+    android:icon="@drawable/icon" >
+        <meta-data android:name="content" android:value="hello world"/>
+        <meta-data android:name="enableZoom" android:value="false"/>
+        <meta-data android:name="release" android:value="false"/>
+        <activity android:label="My binary test" android:name="com.andycar.binarytest.webapp.WebViewActivity" android:screenOrientation="unspecified">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.INFO"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.andycar.binarytest.test"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
